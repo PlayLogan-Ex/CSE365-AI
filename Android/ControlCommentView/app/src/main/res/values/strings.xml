@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">MultiComment</string>
+
+    <string name="answer_sample">At least Cisco does. There is this program called CIIP (Cisco International Internship Program) where they bring about considerable amount of both Software Engineering and Business interns from across the globe.</string>
+    <string name="comment1_sample">IMO, this is the answer to the question. Not to say that the other answers are not good or correct.</string>
+    <string name="comment2_sample">This is a much more concise and logical approach for me.</string>
+
+    <string name="question_text1">How do I UPDATE from a SELECT in SQL Server?</string>
+    <string name="question_text2">Are you able to program a robot using C++ without programming it using Assembly (programming language) at all?</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <color name="test">#666</color>
+    <color name="test2">#111</color>
+    <string name="title_activity_view_all_comment">ViewAllComment</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+</resources>

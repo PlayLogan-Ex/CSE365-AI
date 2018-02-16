@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">IoT App</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string-array name="question_answer">
+        <item>Practitioners do not like the word "Artificial Intelligence". It has become a taboo word.</item>
+        <item>Top blogs, best books, buying recommendations: those are not the hallmarks of expertise. "</item>
+        <item>I think it might have been worth letting it run a little while longer</item>
+        <item>I have just finished a degree course on AI so was looking forward to asking GA and neural network related questions on it, so it closing is a bit of a dissapointment.</item>
+     </string-array>
+
+    <string-array name="username">
+        <item>Amit Kumar Das (sir)</item>
+        <item>Sakibur Rahman</item>
+        <item>Anika Any</item>
+        <item>Faria Nawrine</item>
+    </string-array>
+
+    <string-array name="time">
+        <item>1 month ago</item>
+        <item>3 week ago</item>
+        <item>just now</item>
+        <item>1 year ago</item>
+    </string-array>
+    <string name="title_activity_registration_form">User Registration</string>
+
+    <string name="title_activity_qa">Question and Answers</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_post_question">Post Your Question</string>
+    <string name="title_activity_user_profile">My Profile</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_update_user_profile">Update Profile</string>
+    <string name="title_activity_search">Search</string>
+    <string name="title_activity_ask_question">AskQuestion</string>
+
+
+</resources>

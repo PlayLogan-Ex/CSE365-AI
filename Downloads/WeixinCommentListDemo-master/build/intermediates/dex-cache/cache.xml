@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\xampp\htdocs\IoT\Downloads\WeixinCommentListDemo-master\app\libs\universal-image-loader-1.9.4.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="831368dfdef2c9396955489e9058e6ad8a8e4244">
+        <dex dex="C:\xampp\htdocs\IoT\Downloads\WeixinCommentListDemo-master\app\build\intermediates\pre-dexed\debug\universal-image-loader-1.9.4-07570584f2f21cf56a83c6d6f12f0b95f75a167d.jar" />
+    </item>
+    <item
+        jar="C:\xampp\htdocs\IoT\Downloads\WeixinCommentListDemo-master\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="f8efd0096475e0daf054267b61544e10dc776503">
+        <dex dex="C:\xampp\htdocs\IoT\Downloads\WeixinCommentListDemo-master\app\build\intermediates\pre-dexed\debug\classes-3fa598466e48e1e9b29b52aa0892900324052275.jar" />
+    </item>
+    <item
+        jar="D:\android-development\sdk\extras\android\m2repository\com\android\support\support-annotations\22.2.1\support-annotations-22.2.1.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="61a0ff5c29295ec56d7e0bd3d25d95dbf71b4b2b">
+        <dex dex="C:\xampp\htdocs\IoT\Downloads\WeixinCommentListDemo-master\app\build\intermediates\pre-dexed\debug\support-annotations-22.2.1-12f10810aafaf63d68f57e14ddf181d4e0605a28.jar" />
+    </item>
+    <item
+        jar="C:\xampp\htdocs\IoT\Downloads\WeixinCommentListDemo-master\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\jars\libs\internal_impl-22.2.1.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="c471eaaba13ff64f6e0383d1c30a9cdc9a97efeb">
+        <dex dex="C:\xampp\htdocs\IoT\Downloads\WeixinCommentListDemo-master\app\build\intermediates\pre-dexed\debug\internal_impl-22.2.1-92902eab81babc0757b692d8e5603212ec76d5ba.jar" />
+    </item>
+
+</items>

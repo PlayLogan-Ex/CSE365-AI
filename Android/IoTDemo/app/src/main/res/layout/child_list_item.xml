@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/profilePic"
+            android:layout_width="150px"
+            android:layout_height="150px"
+            android:onClick="profilePic"
+            android:src="@drawable/amit_sir"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="5dp"
+            android:paddingLeft="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:textSize="20dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="So, I've been wanting to make my own personal assistant using Python. I would speak to my headset, call out it's name."
+                android:id="@+id/questionAnswer" />
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Amit Kumar Das"
+                    android:id="@+id/userName" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" : "/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2 month ago"
+                    android:id="@+id/time" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:layout_width="200px"
+            android:layout_height="1dp"/>
+
+        <ImageView
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/ic_thumb_up_black_24dp"
+            android:id="@+id/iconThumbUp"
+            android:onClick="iconThumbUp"/>
+        <TextView
+            android:layout_width="30dp"
+            android:layout_marginLeft="5dp"
+            android:layout_height="20dp"
+            android:text="1.1K"
+            android:id="@+id/thumbUpCount"/>
+
+        <ImageView
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/ic_thumb_down_black_24dp"
+            android:id="@+id/iconThumbDown"
+            android:onClick="iconThumbDown"/>
+        <TextView
+            android:layout_width="30dp"
+            android:layout_marginLeft="5dp"
+            android:layout_height="20dp"
+            android:text="5"
+            android:id="@+id/thumbDownCount"/>
+
+        <ImageView
+            android:layout_width="60px"
+            android:layout_height="60px"
+            android:layout_marginLeft="80dp"
+            android:src="@drawable/ic_more_vert_black_24dp"
+            android:id="@+id/iconMore"
+            android:onClick="iconMore"/>
+    </LinearLayout>
+
+</LinearLayout>
