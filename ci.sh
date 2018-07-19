@@ -22,8 +22,8 @@
 
 echo
 echo 01. Done...Initializing who am I.
-git config --global user.email "sakib.rahman.0000@gmail.com"
-git config --global user.name "Sakib Rahman"
+git config --global user.email "noormim2404@gmail.com"
+git config --global user.name "kamrunNur"
 
 
 ############
@@ -49,8 +49,12 @@ git add .
 ############
 
 echo 04. Done...Committing a modified version of a file to the repo.
-echo 
-git commit -m "Init: Up activity at github"
+echo
+
+# 2018.July 19 
+## ADDED feedback_system_skeleton.jpeg
+
+git commit -m "ADDED feedback_system_skeleton.jpeg"
 
 
 ############
@@ -71,7 +75,7 @@ git remote -v
 # Change your remote's URL from SSH to HTTPS with the git remote set-url command.
 echo
 echo 06. Done...Updating remote URL.
-git remote set-url origin https://github.com/sakib-rahman-bangladesh/CSE365-AI
+git remote set-url origin https://github.com/kamrunNur/CSE365-AI
 
 
 ############
@@ -92,4 +96,4 @@ echo
 echo 08. Pushing local codebase to remote repo...Repo-to-repo collaboration: git push
 echo
 git push origin master
-git push --all -f https://github.com/sakib-rahman-bangladesh/CSE365-AI
+git push --all -f https://github.com/kamrunNur/CSE365-AI
