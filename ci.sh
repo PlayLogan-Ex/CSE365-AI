@@ -54,7 +54,11 @@ echo
 # 2018.July 19 
 ## ADDED feedback_system_skeleton.jpeg
 
-git commit -m "ADDED feedback_system_skeleton.jpeg"
+# 2018.July 20
+## ADDED screenshot of erd, tab-layout     
+
+git commit -m "ADDED screenshot of erd, tab-layout"
+
 
 
 ############
