@@ -8,8 +8,8 @@
 
 echo
 echo 01. Done...Initializing who am I.
-git config --global user.email "noormim2404@gmail.com"
-git config --global user.name "kamrunNur"
+git config user.email "rytotul@gmail.com"
+git config user.name "Totul"
 
 
 ############
