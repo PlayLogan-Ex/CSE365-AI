@@ -20,6 +20,7 @@ function main {
         git init
     fi
 
+    # Add new files if there any
     echo
     echo "[*] Done...Saving changes to the repository."
     git add .
@@ -35,6 +36,7 @@ function main {
     echo "[*] Checking remote origin."
     repo=$(git remote -v)
 
+    # Checks the repository avaibility
     if [[ $repo == "" ]]; then
         echo -e "[-] No remote repository added.\n[-] Add Some..."
     else
@@ -66,11 +68,13 @@ function main {
     git push --all -f git@github.com:PlayLogan-Ex/bookbucket.git
 }
 
+# Help Message
 function help {
     echo "[+] Pass 'u' as an argument to update the remote URL"
     echo "[+] Pass 'h' or '-h' for 'help'"
 }
 
+# Here the Scripts Starts
 if [[ $1 == 'h' || $1 == '-h' ]]; then
     help
 elif [[ $1 == "" ]]; then
