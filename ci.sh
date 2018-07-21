@@ -12,7 +12,7 @@ git config user.name "Totul"
 
 # Check whether it is already a git repo or not
 if [[ -e ".git" ]]; then
-    echo "[*] ALready a git repo..."
+    echo "[*] Already a git repo..."
 else
     echo "[*] Done...Initializing a new Git repo for this project."
     echo
