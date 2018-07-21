@@ -1,9 +1,22 @@
+#!/usr/bin/env bash
+
+: "
+#   Git updater for Linux
+#   Modified by: Nazmul Hossain (fb.com/nazmul.XI)
+"
+
 echo
 echo "[*] Done...Initializing who am I."
 git config user.email "rytotul@gmail.com"
 git config user.name "Totul"
 
-
+if [[ -e ".git" ]]; then
+    echo "[*] ALready a git repo..."
+else
+    echo "[*] Done...Initializing a new Git repo for this project."
+    echo
+    git init
+fi
 
 echo
 echo "[*] Done...Saving changes to the repository."
