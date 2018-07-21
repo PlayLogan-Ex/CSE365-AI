@@ -3,13 +3,7 @@ echo "[*] Done...Initializing who am I."
 git config user.email "rytotul@gmail.com"
 git config user.name "Totul"
 
-if [ [ -f .git ]]; then
-    echo "[*] ALready a git repo..."
-else
-    echo "[*] Done...Initializing a new Git repo for this project."
-    echo
-    git init
-fi
+
 
 echo
 echo "[*] Done...Saving changes to the repository."
@@ -18,7 +12,7 @@ git add .
 echo "[*] Done...Committing a modified version of a file to the repo."
 echo
 
-echo "[*] Add commit message: "; read message
+read -p "[*] Add commit message: " message
 git commit -am "$message"
 
 # List your existing remotes in order to get the name of the remote you want to change.
@@ -40,5 +34,5 @@ git remote -v
 echo
 echo "[*] Pushing local codebase to remote repo...Repo-to-repo collaboration."
 echo
-git push origin master
+#git push origin master
 git push --all -f git@github.com:PlayLogan-Ex/bookbucket.git
