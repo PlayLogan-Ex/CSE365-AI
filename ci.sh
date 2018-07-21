@@ -32,8 +32,14 @@ function main {
 
     # List your existing remotes in order to get the name of the remote you want to change.
     echo
-    echo "[*] Done...checking remote origin."
+    echo "[*] Checking remote origin."
     repo=$(git remote -v)
+
+    if [[ $repo == "" ]]; then
+        echo -e "[-] No remote repository added.\n[-] Add Some..."
+    else
+        echo "[*] Remote repository found!"
+    fi
 
     if [[ $1 == "u" ]]; then
         # Changes the remote's URL.
