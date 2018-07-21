@@ -44,6 +44,11 @@ git remote set-url origin git@github.com:PlayLogan-Ex/bookbucket.git
 echo "[*] Done...Verifying remote URL."
 echo
 repo2=$(git remote -v)
+if [[ $repo == $repo2 ]]; then
+    echo "[*] Repo's are same..."
+else
+    echo "[*] Repo Updated!"
+fi
 
 echo
 echo "[*] Pushing local codebase to remote repo...Repo-to-repo collaboration."
