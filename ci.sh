@@ -26,9 +26,10 @@ function main {
     git add .
 
     # Commit Changes
+    # TO HACK COMMIT JUST COMMENT OUT #1 AND PLACE YOUR COMMIT INSTEAD OF $message
     echo "[*] Done...Committing a modified version of a file to the repo."
     echo
-    read -p "[*] Add commit message: " message
+    read -p "[*] Add commit message: " message #1
     git commit -am "$message"
 
     # List your existing remotes in order to get the name of the remote you want to change.
@@ -76,6 +77,7 @@ function update {
 function help {
     echo "[+] Pass 'u' as an argument to update the remote URL"
     echo "[+] Pass 'h' or '-h' for 'help'"
+    echo "[+] TO HACK COMMIT JUST COMMENT OUT #1 AND PLACE YOUR COMMIT INSTEAD OF $message"
 }
 
 # Here the Scripts Starts
