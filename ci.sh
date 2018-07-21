@@ -31,11 +31,6 @@ function main {
     read -p "[*] Add commit message: " message
     git commit -am "$message"
 
-    # List your existing remotes in order to get the name of the remote you want to change.
-    echo
-    echo "[*] Checking remote origin."
-    repo=$(git remote -v)
-
     # Checks the repository avaibility
     if [[ $repo == "" ]]; then
         echo -e "[-] No remote repository added.\n[-] Add Some..."
@@ -51,21 +46,25 @@ function main {
 }
 
 function update {
+    # List your existing remotes in order to get the name of the remote you want to change.
+    echo
+    echo "[*] Checking remote origin."
+    repo=$(git remote -v)
+    
     # Changes the remote's URL.
-        echo
-        read -p "The new repo URL: " n_repo
-        echo
-        echo "[*] Done...Updating remote URL."
-        git remote set-url origin $n_repo
-
-        # Verify that the remote URL has changed.
-        echo "[*] Done...Verifying remote URL."
-        repo2=$(git remote -v)
-        if [[ $repo == $repo2 ]]; then
-            echo "[*] Repo's are same..."
-        else
-            echo "[*] Repo Updated!"
-        fi
+    echo
+    read -p "[+] The new repo URL: " n_repo
+    echo "[*] Done...Updating remote URL."
+    git remote set-url origin $n_repo
+    
+    # Verify that the remote URL has changed.
+    echo "[*] Done...Verifying remote URL."
+    repo2=$(git remote -v)
+    if [[ $repo == $repo2 ]]; then
+        echo -e "[*] Repo's are same...\n"
+    else
+        echo -e "[*] Repo Updated!\n"
+    fi
 }
 
 # Help Message
@@ -77,10 +76,10 @@ function help {
 # Here the Scripts Starts
 if [[ $1 == 'h' || $1 == '-h' ]]; then
     help
-elif [[ $1 == "" ]]; then
-    main
 elif [[ $1 == "u" ]]; then
     update
+elif [[ $1 == "" ]]; then
+    main
 else
     echo "[-] Nothing Understood..."
     echo "[-] Pass 'h' for 'Help'"
