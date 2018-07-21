@@ -43,8 +43,15 @@ function main {
         echo "[*] Remote repository found!"
     fi
 
-    if [[ $1 == "u" ]]; then
-        # Changes the remote's URL.
+    # Push the local changes to remote
+    echo
+    echo "[*] Pushing local codebase to remote repo...Repo-to-repo collaboration."
+    #git push origin master
+    git push --all -f
+}
+
+function update {
+    # Changes the remote's URL.
         echo
         read -p "The new repo URL: " n_repo
         echo
@@ -59,13 +66,6 @@ function main {
         else
             echo "[*] Repo Updated!"
         fi
-    fi
-
-    # Push the local changes to remote
-    echo
-    echo "[*] Pushing local codebase to remote repo...Repo-to-repo collaboration."
-    #git push origin master
-    git push --all -f
 }
 
 # Help Message
@@ -77,8 +77,10 @@ function help {
 # Here the Scripts Starts
 if [[ $1 == 'h' || $1 == '-h' ]]; then
     help
-elif [[ $1 == "" || $1 == "u" ]]; then
+elif [[ $1 == "" ]]; then
     main
+elif [[ $1 == "u" ]]; then
+    update
 else
     echo "[-] Nothing Understood..."
     echo "[-] Pass 'h' for 'Help'"
