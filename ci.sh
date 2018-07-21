@@ -31,6 +31,11 @@ function main {
     read -p "[*] Add commit message: " message
     git commit -am "$message"
 
+    # List your existing remotes in order to get the name of the remote you want to change.
+    echo
+    echo "[*] Checking remote origin."
+    repo=$(git remote -v)
+
     # Checks the repository avaibility
     if [[ $repo == "" ]]; then
         echo -e "[-] No remote repository added.\n[-] Add Some..."
