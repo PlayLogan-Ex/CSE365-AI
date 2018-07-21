@@ -36,20 +36,20 @@ echo
 repo=$(git remote -v)
 
 if [[ $1 == "u" ]]; then
+    # Changes the remote's URL.
     read -p "The new repo URL: " n_repo
-    # Change your remote's URL from SSH to HTTPS with the git remote set-url command.
     echo
     echo "[*] Done...Updating remote URL."
     git remote set-url origin $n_repo
-fi
 
-# Verify that the remote URL has changed.
-echo "[*] Done...Verifying remote URL."
-repo2=$(git remote -v)
-if [[ $repo == $repo2 ]]; then
-    echo "[*] Repo's are same..."
-else
-    echo "[*] Repo Updated!"
+    # Verify that the remote URL has changed.
+    echo "[*] Done...Verifying remote URL."
+    repo2=$(git remote -v)
+    if [[ $repo == $repo2 ]]; then
+        echo "[*] Repo's are same..."
+    else
+        echo "[*] Repo Updated!"
+    fi
 fi
 
 # Push the local changes to remote
