@@ -35,10 +35,13 @@ echo "[*] Done...checking remote origin."
 echo
 repo=$(git remote -v)
 
-# Change your remote's URL from SSH to HTTPS with the git remote set-url command.
-echo
-echo "[*] Done...Updating remote URL."
-git remote set-url origin git@github.com:PlayLogan-Ex/bookbucket.git
+if [[ $1 == "u" ]]; then
+    read -p "The new repo URL: " n_repo
+    # Change your remote's URL from SSH to HTTPS with the git remote set-url command.
+    echo
+    echo "[*] Done...Updating remote URL."
+    git remote set-url origin $n_repo
+fi
 
 # Verify that the remote URL has changed.
 echo "[*] Done...Verifying remote URL."
