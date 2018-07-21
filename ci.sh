@@ -77,7 +77,7 @@ function help {
 # Here the Scripts Starts
 if [[ $1 == 'h' || $1 == '-h' ]]; then
     help
-elif [[ $1 == "" ]]; then
+elif [[ $1 == "" || $1 == "u" ]]; then
     main
 else
     echo "[-] Nothing Understood..."
