@@ -10,6 +10,7 @@ echo "[*] Done...Initializing who am I."
 git config user.email "rytotul@gmail.com"
 git config user.name "Totul"
 
+# Check whether it is already a git repo or not
 if [[ -e ".git" ]]; then
     echo "[*] ALready a git repo..."
 else
@@ -22,9 +23,9 @@ echo
 echo "[*] Done...Saving changes to the repository."
 git add .
 
+# Commit Changes
 echo "[*] Done...Committing a modified version of a file to the repo."
 echo
-
 read -p "[*] Add commit message: " message
 git commit -am "$message"
 
@@ -32,7 +33,7 @@ git commit -am "$message"
 echo
 echo "[*] Done...checking remote origin."
 echo
-git remote -v
+repo=$(git remote -v)
 
 # Change your remote's URL from SSH to HTTPS with the git remote set-url command.
 echo
@@ -42,7 +43,7 @@ git remote set-url origin git@github.com:PlayLogan-Ex/bookbucket.git
 # Verify that the remote URL has changed.
 echo "[*] Done...Verifying remote URL."
 echo
-git remote -v
+repo2=$(git remote -v)
 
 echo
 echo "[*] Pushing local codebase to remote repo...Repo-to-repo collaboration."
