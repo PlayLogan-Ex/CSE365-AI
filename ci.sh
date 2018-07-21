@@ -32,11 +32,11 @@ git commit -am "$message"
 # List your existing remotes in order to get the name of the remote you want to change.
 echo
 echo "[*] Done...checking remote origin."
-echo
 repo=$(git remote -v)
 
 if [[ $1 == "u" ]]; then
     # Changes the remote's URL.
+    echo
     read -p "The new repo URL: " n_repo
     echo
     echo "[*] Done...Updating remote URL."
