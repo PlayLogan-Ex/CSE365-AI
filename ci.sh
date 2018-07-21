@@ -65,7 +65,7 @@ function main {
     echo
     echo "[*] Pushing local codebase to remote repo...Repo-to-repo collaboration."
     #git push origin master
-    git push --all -f git@github.com:PlayLogan-Ex/bookbucket.git
+    git push --all -f
 }
 
 # Help Message
